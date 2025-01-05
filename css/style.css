@@ -1,0 +1,130 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+    margin: 0;
+}
+
+header {
+    background-color: #1f1f1f;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #333;
+}
+
+header h1 {
+    color: #f0f0f0;
+    margin-bottom: 15px;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+
+.menu li button {
+    background-color: #333;
+    border: none;
+    padding: 10px 20px;
+    color: #e0e0e0;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menu li button:hover {
+    background-color: #555;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #2c2c2c;
+    color: #e0e0e0;
+}
+
+.search-bar button {
+    background-color: #444;
+    border: none;
+    padding: 10px 20px;
+    color: #e0e0e0;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #666;
+}
+
+main {
+    padding: 20px;
+}
+
+.news-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: start;
+}
+
+.article {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.article img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.article h3 {
+    color: #f0f0f0;
+    margin-bottom: 10px;
+}
+
+.article p {
+    margin-bottom: 10px;
+    color: #bdbdbd;
+}
+
+.article a {
+    color: #1e90ff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+.article a:hover {
+    color: #63a4ff;
+}
